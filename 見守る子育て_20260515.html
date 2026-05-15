@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>「見守る」子育ての極意 - 図解</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"M PLUS Rounded 1c"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              light: '#d1fae5',
+              DEFAULT: '#10b981', // emerald-500
+              dark: '#047857',
+            },
+            danger: {
+              light: '#fee2e2',
+              DEFAULT: '#ef4444', // red-500
+            },
+            bgbase: '#f8fafc',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #f0fdf4; /* Very light green background */
+      color: #334155;
+      font-feature-settings: "palt";
+    }
+    .card-shadow {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Pattern background for title */
+    .pattern-bg {
+      background-image: radial-gradient(#10b981 1px, transparent 1px);
+      background-size: 20px 20px;
+      background-color: #ecfdf5;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <div class="max-w-md mx-auto bg-white min-h-screen relative overflow-hidden card-shadow sm:max-w-lg md:max-w-2xl">
+    
+    <!-- Title Area (No header tag) -->
+    <div class="pattern-bg pt-12 pb-10 px-6 rounded-b-[2.5rem] relative z-10 shadow-sm border-b-4 border-brand">
+      <div class="text-center">
+        <span class="inline-block bg-white text-brand font-bold px-4 py-1.5 rounded-full text-sm mb-4 shadow-sm border border-brand/20">
+          親の心構えと関わり方
+        </span>
+        <h1 class="text-3xl font-extrabold text-slate-800 leading-tight tracking-tight mb-3">
+          「見守る」子育て<br>
+          <span class="text-xl font-bold text-slate-600 mt-2 block">〜自主性と強みを育む極意〜</span>
+        </h1>
+        <p class="text-slate-600 text-sm font-medium mt-4 bg-white/80 p-3 rounded-xl inline-block backdrop-blur-sm">
+          子どもの「好き」と「得意」を信じて待つ
+        </p>
+      </div>
+    </div>
+
+    <main class="px-5 py-8 space-y-12">
+
+      <section class="fade-in">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
+          <h2 class="text-xl font-bold border-b-2 border-brand/30 pb-1 flex-1">「与える」から「観察する」へ</h2>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 relative">
+          <!-- NG Side -->
+          <div class="mb-6 relative z-10">
+            <div class="flex items-start gap-3">
+              <div class="bg-danger text-white rounded-full p-1.5 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-danger mb-1">詰め込みすぎ・押しつけ</h3>
+                <p class="text-sm text-slate-600">「将来役立つから」「一流だから」と子どもが望まないものをあれこれ与える</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div class="absolute left-9 top-[4.5rem] bottom-[4.5rem] w-0.5 bg-slate-300 border-l-2 border-dashed border-slate-300"></div>
+          <div class="absolute left-[1.6rem] top-1/2 -translate-y-1/2 bg-slate-200 rounded-full p-1">
+            <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+          </div>
+
+          <!-- OK Side -->
+          <div class="mt-8 relative z-10 bg-white p-4 rounded-xl shadow-sm border border-brand/20">
+            <div class="flex items-start gap-3">
+              <div class="bg-brand text-white rounded-full p-1.5 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-brand mb-1">しっかり観察して見守る</h3>
+                <ul class="text-sm text-slate-700 space-y-2 mt-2">
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>子ども自身が見つけた「好き」を認める</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>子どもの「判断」を大事にする</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>「ボーッとしている時間」を大切にする</li>
+                </ul>
+                <div class="mt-3 text-xs bg-brand-light text-brand-dark p-2 rounded-lg font-medium text-center">
+                  習い事は「何をさせるか」より「夢中になれるか」
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fade-in">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
+          <h2 class="text-xl font-bold border-b-2 border-brand/30 pb-1 flex-1">これからの時代に必要な力</h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 mb-4">
+          <div class="bg-slate-100 p-4 rounded-xl text-center opacity-70">
+            <div class="text-danger font-bold text-sm mb-2">これまでの正解</div>
+            <div class="text-sm line-through text-slate-500">苦手を克服する</div>
+            <div class="text-sm line-through text-slate-500 mt-1">ひと通りこなす</div>
+            <div class="text-sm line-through text-slate-500 mt-1">全部頑張らせる</div>
+          </div>
+          <div class="bg-brand/10 p-4 rounded-xl text-center border-2 border-brand relative shadow-sm">
+            <div class="absolute -top-3 -right-2 text-2xl">✨</div>
+            <div class="text-brand-dark font-bold text-sm mb-2">これからの正解</div>
+            <div class="text-sm font-bold text-slate-800">得意を伸ばす</div>
+            <div class="text-sm font-bold text-slate-800 mt-1">好きな分野を選ぶ</div>
+            <div class="text-sm font-bold text-slate-800 mt-1">自分ならではの強み</div>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mt-4">
+          <h3 class="font-bold text-amber-800 flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+            「自分軸」が自然に育つメカニズム
+          </h3>
+          <p class="text-sm text-slate-700 mb-3">自分軸とは、「経験や価値観に基づいた、自分なりの判断基準」のこと。</p>
+          <div class="flex items-center justify-between bg-white p-3 rounded-lg border border-amber-100">
+            <div class="text-center w-1/3">
+              <div class="text-2xl mb-1">👀</div>
+              <div class="text-xs font-bold">好奇心</div>
+            </div>
+            <div class="text-amber-300">▶</div>
+            <div class="text-center w-1/3">
+              <div class="text-2xl mb-1">🏃‍♂️</div>
+              <div class="text-xs font-bold">自主性に任せる</div>
+            </div>
+            <div class="text-amber-300">▶</div>
+            <div class="text-center w-1/3">
+              <div class="text-2xl mb-1">🌳</div>
+              <div class="text-xs font-bold text-amber-600">自分軸が育つ</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fade-in">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
+          <h2 class="text-xl font-bold border-b-2 border-brand/30 pb-1 flex-1">「監視する」と「見守る」の違い</h2>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <!-- Monitoring -->
+          <div class="bg-danger-light/30 border border-danger/30 rounded-xl overflow-hidden">
+            <div class="bg-danger/10 px-4 py-2 border-b border-danger/20 flex justify-between items-center">
+              <span class="font-bold text-danger flex items-center gap-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                監視する
+              </span>
+              <span class="text-xs text-danger font-bold px-2 py-0.5 bg-danger/20 rounded-full">NGな関わり</span>
+            </div>
+            <div class="p-4">
+              <ul class="text-sm text-slate-700 space-y-3">
+                <li class="flex items-start gap-2">
+                  <span class="text-danger mt-0.5 font-bold">×</span>
+                  <span>子どもの行動にいちいちダメ出しする</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-danger mt-0.5 font-bold">×</span>
+                  <span>親の先回りで失敗を回避させる</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-danger mt-0.5 font-bold">×</span>
+                  <span>「ダメだ」「〜してはいけない」と否定する</span>
+                </li>
+              </ul>
+              <div class="mt-3 bg-white p-2 rounded text-xs text-slate-600 border border-danger/10">
+                <span class="font-bold text-danger">結果:</span> 指示待ちになり、挫折ですぐ諦める。親に嫌われたと感じる。
+              </div>
+            </div>
+          </div>
+
+          <!-- Observing -->
+          <div class="bg-brand-light/30 border border-brand/30 rounded-xl overflow-hidden shadow-sm">
+            <div class="bg-brand/10 px-4 py-2 border-b border-brand/20 flex justify-between items-center">
+              <span class="font-bold text-brand-dark flex items-center gap-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                見守る・待つ
+              </span>
+              <span class="text-xs text-brand-dark font-bold px-2 py-0.5 bg-brand/20 rounded-full">目指す関わり</span>
+            </div>
+            <div class="p-4">
+              <ul class="text-sm text-slate-700 space-y-3">
+                <li class="flex items-start gap-2">
+                  <span class="text-brand mt-0.5 font-bold">○</span>
+                  <span>本当に大事な注意だけして、そっと見ている</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-brand mt-0.5 font-bold">○</span>
+                  <span>「この子なら大丈夫」と信じ、自分の力で取り組むのを見る</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-brand mt-0.5 font-bold">○</span>
+                  <span>失敗から立て直す経験を積ませる（取り上げない）</span>
+                </li>
+              </ul>
+              <div class="mt-3 bg-white p-2 rounded text-xs text-slate-600 border border-brand/10">
+                <span class="font-bold text-brand">ポイント:</span> アドバイスは子どもが求めてから！
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fade-in">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</div>
+          <h2 class="text-xl font-bold border-b-2 border-brand/30 pb-1 flex-1">自信を育む「声かけ」と対応</h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Step 1 -->
+          <div class="bg-white border-l-4 border-blue-400 p-4 rounded-r-xl shadow-sm">
+            <h3 class="font-bold text-slate-800 text-sm mb-1">① まずは受け止める</h3>
+            <p class="text-sm text-slate-600">良い・悪いのジャッジの前に「そうなんだね」と子どもの言い分を聞く。</p>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="bg-white border-l-4 border-indigo-400 p-4 rounded-r-xl shadow-sm">
+            <h3 class="font-bold text-slate-800 text-sm mb-1">② 肯定語で伝える</h3>
+            <div class="flex items-center gap-2 mt-2 bg-slate-50 p-2 rounded text-sm">
+              <span class="text-danger line-through w-1/2 text-center text-xs">〜してはいけない</span>
+              <span class="text-slate-400">▶</span>
+              <span class="text-brand font-bold w-1/2 text-center">〜しよう</span>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-white border-l-4 border-amber-400 p-4 rounded-r-xl shadow-sm">
+            <h3 class="font-bold text-slate-800 text-sm mb-1">③ 日常のポジティブ・フィードバック</h3>
+            <p class="text-sm text-slate-600 mb-2">「自分にもできそう」という予感を増やす。</p>
+            <ul class="text-xs text-slate-600 space-y-1">
+              <li>・できていたことをほめる</li>
+              <li>・当たり前のことをほめる（当たり前にできるようになる）</li>
+              <li>・最終結果にとらわれない</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="fade-in bg-slate-800 text-white p-6 rounded-2xl mx--5 mt-8 shadow-inner">
+        <h2 class="text-xl font-bold border-b border-slate-600 pb-3 mb-5 text-center">環境との付き合い方</h2>
+        
+        <div class="space-y-5">
+          <!-- School -->
+          <div>
+            <h3 class="text-amber-300 font-bold text-sm flex items-center gap-2 mb-2">
+              <span class="text-xl">🏫</span> いい学校とは？
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed bg-slate-700/50 p-3 rounded-lg">
+              公立か私立かではなく<span class="text-white font-bold border-b border-amber-300">「本人が活躍できるか」</span>。<br>
+              「公立で揉まれていい」が当てはまるのは目立つ特技やリーダーシップがある子。おとなしいタイプはタイプを見極める必要がある。
+            </p>
+          </div>
+
+          <!-- Cram school -->
+          <div>
+            <h3 class="text-blue-300 font-bold text-sm flex items-center gap-2 mb-2">
+              <span class="text-xl">✏️</span> 塾は必要か？
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed bg-slate-700/50 p-3 rounded-lg">
+              塾は学力を高めるための「不自然な空間」。小学校の学習だけでは<span class="text-white font-bold">本人が物足りない様子</span>なら選択肢として悪くない。
+            </p>
+          </div>
+
+          <!-- Media -->
+          <div>
+            <h3 class="text-green-300 font-bold text-sm flex items-center gap-2 mb-2">
+              <span class="text-xl">📺</span> テレビやDVD
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed bg-slate-700/50 p-3 rounded-lg">
+              <span class="text-white font-bold">1度に60分以内</span>が妥当。視聴後は「余韻の時間」を作る。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="fade-in pt-4">
+        <div class="bg-brand/10 border-2 border-brand border-dashed rounded-2xl p-6 text-center">
+          <h2 class="text-lg font-bold text-brand-dark mb-4">親が与えた方がいい「3つのもの」</h2>
+          <div class="flex flex-col gap-3 mb-6">
+            <div class="bg-white p-3 rounded-lg shadow-sm font-bold text-slate-700 text-sm">
+              ① 「勉強するのが当たり前」という考え方
+            </div>
+            <div class="bg-white p-3 rounded-lg shadow-sm font-bold text-slate-700 text-sm">
+              ② 情報を取り入れる技術<br>
+              <span class="text-xs text-danger font-normal">※「レコメンド機能」は要注意</span>
+            </div>
+            <div class="bg-white p-3 rounded-lg shadow-sm font-bold text-slate-700 text-sm">
+              ③ 環境に出会うチャンス
+            </div>
+          </div>
+          
+          <div class="w-12 h-1 bg-brand mx-auto mb-4 rounded-full"></div>
+          
+          <p class="font-bold text-slate-800 text-lg">
+            親に愛されて育った子どもは、<br>そうそうゆがんだ人間にはなりません。
+          </p>
+          <p class="text-brand-dark font-bold mt-3 bg-brand-light inline-block px-4 py-2 rounded-full text-sm">
+            愛情を伝えて、本人の良いところを伸ばす
+          </p>
+        </div>
+      </section>
+
+    </main>
+    
+    <!-- Decorative bottom (No footer tag) -->
+    <div class="h-6 bg-brand w-full mt-4"></div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      const fadeElements = document.querySelectorAll('.fade-in');
+      fadeElements.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
